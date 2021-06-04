@@ -8,7 +8,7 @@ function Welcome() {
     <SafeAreaView>
       <Text>Welcome</Text>
       <Button
-      text="Üye Kaydı Oluştur"
+      text="Üye Kaydı Oluşturun"
       onPress={null}
       />
     </SafeAreaView>
@@ -16,3 +16,4 @@ function Welcome() {
 }
 
 export default Welcome;
+  
