@@ -6,24 +6,20 @@ import {Text} from 'react-native';
 
 import Welcome from './pages/Welcome';
 import MemberSign from './pages/MemberSign';
+import MemberResult from './pages/MemberResult';
+
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{
-        headerShown:false,
-      }}>
-        <Stack.Screen name="WelcomeScreen" 
-        component={Welcome}
-        // options={{
-        //   headerShown:false,  //options kullanımı önemli.dökümandan detaylı incele!
-        // }}
-        />
-        <Stack.Screen 
-        name="MemberSignScreen"
-        component={MemberSign}
-        />
+      <Stack.Navigator screenOptions={{ headerShown:false, }}>
+        <Stack.Screen name="WelcomeScreen" component={Welcome}   />
+         {/* options={{
+           headerShown:false,  //options kullanımı önemli.dökümandan detaylı incele!
+         }} */}
+        <Stack.Screen name="MemberSignScreen" component={MemberSign} />
+        <Stack.Screen name="MemberResultScreen" component={MemberResult} />
       </Stack.Navigator>
     </NavigationContainer>
   );
